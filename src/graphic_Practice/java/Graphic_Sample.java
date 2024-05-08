@@ -30,12 +30,12 @@ class MyPanel extends JPanel{
 		oval.fillOval(50, 50, 100, 100);
 	}
 	
-	public void paintComponent1(Graphics rect) {
+	public void paintComponent(Graphics rect) {
 		rect.setColor(Color.BLUE);
 		rect.drawRect(150, 150, 100, 100);
 	}
 	
-	public void paintDoubleOvalComponent(Graphics oval) {
+	public void paintComponent(Graphics oval) {
 		for(int i = 0; i < 255; i += 20) {
 			oval.setColor(new Color(0, 0, 255,i));
 			oval.fillOval(i, i, 100, 100);
@@ -45,3 +45,20 @@ class MyPanel extends JPanel{
 	}
 	
 }
+
+
+//イメージファイルの描画サンプル
+
+//class MyPanel extends JPanel{
+	//Image image;
+	
+	//public MyPanel(){
+		//image = Toolkit.getDefaultToolkit().getImage("");
+	//}
+
+	//public void paintComponent(Graphics g){
+		//if(image != null){
+			//g.drawImage(image, 0, 0, this);
+		//}
+	//}
+//}
